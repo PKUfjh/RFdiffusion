@@ -691,6 +691,7 @@ class BlockAdjacency:
        
         self.conf=conf 
         # either list or path to .txt file with list of scaffolds
+        print("Scaffoldguided is", self.conf.scaffoldguided)
         if self.conf.scaffoldguided.scaffold_list is not None:
             if type(self.conf.scaffoldguided.scaffold_list) == list:
                 self.scaffold_list = scaffold_list

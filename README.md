@@ -10,6 +10,12 @@ pip install torchdata
 pip install pydantic matplotlib kiwisolver pandas scipy
 conda install -c dglteam/label/cu121 dgl
 pip install hydra-core pyrsistent
+git clone https://github.com/NVIDIA/dllogger.git
+cd dllogger
+pip install .
+# 进入RFDiffusion文件夹
+git clone https://github.com/PKUfjh/RFdiffusion.git
+cd RFdiffusion
 cd env/SE3Transformer
 pip install --no-cache-dir -r requirements.txt
 python setup.py install

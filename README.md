@@ -53,8 +53,12 @@ cd examples
 ./design_partialdiffusion.sh
 # Partial diffusion with seq
 ./design_partialdiffusion_withseq.sh
+# Partial diffusion with motif
+./design_partialdiffusion_withmotif.sh
 # Binder design
 ./design_ppi.sh
+# Binder design with specfied hotspots
+./design_ppi_PDK1_hotspot.sh
 ```
 
 ## Troubleshooting

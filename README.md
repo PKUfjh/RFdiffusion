@@ -6,6 +6,7 @@ conda create -n SE3nv python=3.8
 conda activate SE3nv
 <!-- conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=12.1 -c pytorch -c nvidia -->
 conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip install dgl -f https://data.dgl.ai/wheels/torch-2.1/cu121/repo.html
 pip install torchdata
 pip install pydantic matplotlib kiwisolver pandas scipy
 conda install -c dglteam/label/cu121 dgl
@@ -54,6 +55,13 @@ cd examples
 ./design_partialdiffusion_withseq.sh
 # Binder design
 ./design_ppi.sh
+```
+
+## Troubleshooting
+```bash
+OSError: /lib64/libm.so.6: version `GLIBC_2.27' not found (required by /data/run01/scw6ciu/apps/miniforge3/envs/SE3nv_fjh/lib/python3.8/site-packages/torch/lib/../../../../libcurand.so.10)
+
+conda install -c dglteam dgl=0.6.1
 ```
 
 <!--

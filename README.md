@@ -4,8 +4,7 @@
 ```bash
 conda create -n SE3nv python=3.8
 conda activate SE3nv
-<!-- conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=12.1 -c pytorch -c nvidia -->
-conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
+pip3 install torch torchvision torchaudio
 pip install dgl -f https://data.dgl.ai/wheels/torch-2.1/cu121/repo.html
 pip install torchdata
 pip install pydantic matplotlib kiwisolver pandas scipy

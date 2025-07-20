@@ -4,11 +4,10 @@
 ```bash
 conda create -n SE3nv python=3.8
 conda activate SE3nv
-pip3 install torch torchvision torchaudio
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
 pip install dgl -f https://data.dgl.ai/wheels/torch-2.1/cu121/repo.html
 pip install torchdata
 pip install pydantic matplotlib kiwisolver pandas scipy
-conda install -c dglteam/label/cu121 dgl
 pip install hydra-core pyrsistent
 git clone https://github.com/NVIDIA/dllogger.git
 cd dllogger
